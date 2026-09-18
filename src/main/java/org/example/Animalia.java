@@ -8,7 +8,10 @@ public class Animalia {
     private String izena;
 
     public Animalia(String izena, int adina, double pisua){
-
+        this.izena = izena;
+        this.adina = adina;
+        this.pisua = pisua;
+        this.adoptatua = false;
     }
 
     public String getIzena() {
