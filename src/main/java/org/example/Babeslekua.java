@@ -46,19 +46,6 @@ public class Babeslekua {
     }
 
 
-    public Animalia bilatuAnimalia(String izena){
-
-        for (Animalia animalia : animaliak) {
-
-            if (animalia.getIzena().equalsIgnoreCase(izena)) {
-                return animalia;
-            }
-        }
-
-        return null;
-    }
-
-
     public void erakutsiAnimaliak(){
 
         for (Animalia animalia : animaliak) {
