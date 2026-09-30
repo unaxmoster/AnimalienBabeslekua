@@ -1,14 +1,19 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+import javafx.application.Application;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+
+    @Override
+    public void start(Stage stage) {
+
+        Interfaz interfaz = new Interfaz();
+
+        interfaz.erakutsi(stage);
+    }
+
     public static void main(String[] args) {
-
-    Babeslekua babeslekua = new Babeslekua();
-
-    Menua menua = new Menua(babeslekua);
-
-    menua.exekutatu();
+        launch(args);
     }
 }
