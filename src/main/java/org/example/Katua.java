@@ -10,4 +10,9 @@ public class Katua extends Animalia{
     public void eginSoinua(){
         System.out.println("Miau!");
     }
+
+    @Override
+    public String getSoinua() {
+        return "Miau!!";
+    }
 }

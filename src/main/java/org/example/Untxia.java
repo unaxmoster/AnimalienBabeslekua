@@ -10,4 +10,9 @@ public class Untxia extends Animalia{
     public void eginSoinua(){
         System.out.println("??");
     }
+
+    @Override
+    public String getSoinua() {
+        return "??";
+    }
 }

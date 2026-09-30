@@ -10,4 +10,9 @@ public class Txakurra extends Animalia {
     public void eginSoinua(){
         System.out.println("Zaunka!");
     }
+
+    @Override
+    public String getSoinua() {
+        return "Zaunka!";
+    }
 }
