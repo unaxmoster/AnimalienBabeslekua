@@ -14,6 +14,10 @@ public class Babeslekua {
         animaliak.add(animalia);
     }
 
+    public ArrayList<Animalia> getAnimaliak() {
+        return animaliak;
+    }
+
     public boolean ezabatuAnimalia(String izena){
 
         for (Animalia animalia : animaliak) {
