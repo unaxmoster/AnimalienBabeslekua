@@ -58,6 +58,10 @@ public class Animalia {
         System.out.println("Animalia soinua egiten ari da");
     }
 
+    public String getSoinua() {
+        return "";
+    }
+
     @Override
     public String toString(){
         return "Izena: " + izena +
