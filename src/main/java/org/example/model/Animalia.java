@@ -1,6 +1,6 @@
-package org.example;
+package org.example.model;
 
-public class Animalia {
+public abstract class Animalia {
 
     private boolean adoptatua;
     private int adina;
@@ -54,9 +54,7 @@ public class Animalia {
         adoptatua = true;
     }
 
-    public void eginSoinua(){
-        System.out.println("Animalia soinua egiten ari da");
-    }
+    public abstract void eginSoinua();
 
     public String getSoinua() {
         return "";

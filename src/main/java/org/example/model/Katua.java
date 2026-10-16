@@ -1,0 +1,23 @@
+package org.example.model;
+
+public class Katua extends Animalia {
+
+    public Katua(String izena, int adina, double pisua) {
+        super(izena, adina, pisua);
+    }
+
+    @Override
+    public void eginSoinua() {
+        System.out.println("Miau!");
+    }
+
+    @Override
+    public String getSoinua() {
+        return "Miau!!";
+    }
+
+    @Override
+    public String getEspeziea() {
+        return "Katua";
+    }
+}
