@@ -1,4 +1,5 @@
-package org.example;
+
+package org.example.view;
 
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -7,13 +8,15 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import org.example.controller.AnimaliaController;
 
 public class GUI {
-    private Babeslekua babeslekua;
+
+    private AnimaliaController controller;
     private VBox contenido;
 
     public void erakutsi(Stage stage) {
-        babeslekua = new Babeslekua();
+        controller = new AnimaliaController();
 
         Label titulua = new Label("ANIMALIEN BABESLEKUA");
 
@@ -40,6 +43,7 @@ public class GUI {
         raiz.getChildren().addAll(titulua, menua, contenido);
 
         Scene scene = new Scene(raiz, 800, 500);
+
         stage.setTitle("Animalien Babeslekua");
         stage.setScene(scene);
         stage.show();
@@ -47,16 +51,22 @@ public class GUI {
 
     private void mostrarGehitu() {
         contenido.getChildren().clear();
-        contenido.getChildren().add(new GehituView(babeslekua, this::mostrarAnimaliak));
+        contenido.getChildren().add(
+                new GehituView(controller, this::mostrarAnimaliak)
+        );
     }
 
     private void mostrarEzabatu() {
         contenido.getChildren().clear();
-        contenido.getChildren().add(new EzabatuView(babeslekua, this::mostrarAnimaliak));
+        contenido.getChildren().add(
+                new EzabatuView(controller, this::mostrarAnimaliak)
+        );
     }
 
     private void mostrarAnimaliak() {
         contenido.getChildren().clear();
-        contenido.getChildren().add(new AnimaliakView(babeslekua));
+        contenido.getChildren().add(
+                new AnimaliakView(controller)
+        );
     }
 }
