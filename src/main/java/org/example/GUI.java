@@ -15,7 +15,7 @@ public class GUI {
     public void erakutsi(Stage stage) {
         babeslekua = new Babeslekua();
 
-        Label titulo = new Label("ANIMALIEN BABESLEKUA");
+        Label titulua = new Label("ANIMALIEN BABESLEKUA");
 
         Button gehitu = new Button("GEHITU");
         Button ezabatu = new Button("EZABATU");
@@ -37,7 +37,7 @@ public class GUI {
 
         VBox raiz = new VBox(15);
         raiz.setPadding(new Insets(20));
-        raiz.getChildren().addAll(titulo, menua, contenido);
+        raiz.getChildren().addAll(titulua, menua, contenido);
 
         Scene scene = new Scene(raiz, 800, 500);
         stage.setTitle("Animalien Babeslekua");

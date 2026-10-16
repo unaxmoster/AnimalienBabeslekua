@@ -14,7 +14,7 @@ public class GehituView extends VBox {
         super(10);
         this.setPadding(new Insets(20));
 
-        Label titulo = new Label("GEHITU ANIMALIA");
+        Label titulua = new Label("GEHITU ANIMALIA");
         TextField izena = new TextField();
         izena.setPromptText("Izena");
         TextField adina = new TextField();
@@ -57,6 +57,6 @@ public class GehituView extends VBox {
             }
         });
 
-        this.getChildren().addAll(titulo, izena, adina, pisua, mota, gehitu);
+        this.getChildren().addAll(titulua, izena, adina, pisua, mota, gehitu);
     }
 }

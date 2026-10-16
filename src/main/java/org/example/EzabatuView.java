@@ -12,7 +12,7 @@ public class EzabatuView extends VBox {
         super(10);
         this.setPadding(new Insets(20));
 
-        Label titulo = new Label("EZABATU ANIMALIA");
+        Label titulua = new Label("EZABATU ANIMALIA");
         TextField izena = new TextField();
         izena.setPromptText("Animaliaren izena");
 
@@ -24,6 +24,6 @@ public class EzabatuView extends VBox {
             }
         });
 
-        this.getChildren().addAll(titulo, izena, ezabatu);
+        this.getChildren().addAll(titulua, izena, ezabatu);
     }
 }

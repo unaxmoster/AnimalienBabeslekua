@@ -17,8 +17,8 @@ public class AnimaliakView extends VBox {
 
     public void kargatuAnimaliak(Babeslekua babeslekua) {
         this.getChildren().clear();
-        Label titulo = new Label("ANIMALIAK");
-        this.getChildren().add(titulo);
+        Label titulua = new Label("ANIMALIAK");
+        this.getChildren().add(titulua);
 
         for (Animalia animalia : babeslekua.getAnimaliak()) {
             Label informacion = new Label(
